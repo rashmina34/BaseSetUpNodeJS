@@ -1,7 +1,6 @@
 const express = require('express');
 require('dotenv').config(`${__dirname}/.env`);
 const session = require('express-session');
-const config = require('./lib/configs/app.config');
 const app = express(),
     expressValidator = require("express-validator"),
     cors = require('cors');
@@ -23,7 +22,7 @@ const dbConnector = require('./lib/helpers/db.helper'),
 dbConnector.init(app);
 redisConnector.init(app);
 app.use(session({
-    secret: config.secretKey,
+    secret: process.env.secretKey,
     resave: true
 }));
 app.use(passport.initialize());
