@@ -1,1 +1,1 @@
-# BitsBeat Intern MERN Project
+# Base setup for nodejs
