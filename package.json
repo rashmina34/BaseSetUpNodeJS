@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "bcrypt": "^2.0.0",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "cloudinary": "^1.13.2",
     "cors": "^2.8.5",
